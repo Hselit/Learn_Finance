@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin Learn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/x-icon" href="./finance.ico"> 
+  </head>
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <a class="navbar-brand" href="#">Learn Finance</a>
+          <div>
+            <form action="/logout?_method=DELETE" method="POST">
+              <button class="btn btn-primary" type="submit" >Logout</button>
+            </form>
+          </div>
+         
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Contents</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            
+            <div class="offcanvas-body">
+              <div class="nav_main">
+              <ul class="navbar-nav">
+                <h2 id="nav-title">Financial System</h2>
+                <li class="nav-item">
+                  <a id="sub-headings" class="nav-link active" href="#intro_fin_sys">Introduction to Financial System</a>
+                </li>
+                <li class="nav-item">
+                  <a id="sub-headings"class="nav-link" href="#fst">Financial System Types</a>
+                </li>
+                <li class="nav-item">
+                  <a id="sub-headings" class="nav-link" href="#est">Explaination of System types</a>
+                </li>
+              </ul>
+                <hr>
+              <ul class="navbar-nav">
+                  <h2 id="nav-title">Finance Related Terms</h2>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="./terms.html">Terms and Definitions</a>
+                  </li>
+              </ul><hr>
+              <ul class="navbar-nav">
+                <h2 id="nav-title">Financial Market</h2>
+                <li class="nav-item">
+                  <a id="sub-headings" class="nav-link" href="#wfm">What is Financial Market?</a>
+                </li>
+                <li class="nav-item">
+                  <a id="sub-headings"class="nav-link" href="#fmt">Financial Market Types</a>
+                </li>
+                <li class="nav-item">
+                  <a id="sub-headings" class="nav-link" href="#emt">Explaination on Market Types</a>
+                </li>
+                </ul><hr>
+                <ul class="navbar-nav">
+                  <h2 id="nav-title">Capital Market</h2>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#wcm">What is Capital Market?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings"class="nav-link" href="#pm">Primary Market</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#sm">Secondary Market</a>
+                  </li>
+                </ul><hr>
+                <ul class="navbar-nav">
+                  <h2 id="nav-title">Regulatory</h2>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#sebi">SEBI</a>
+                  </li>
+                </ul><hr>
+                <ul class="navbar-nav">
+                  <h2 id="nav-title">Secondary Market</h2>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#stock_exc">Stock Exchanges</a>
+                  </li>
+                  <ul>
+                  <li class="nav-item">
+                    <a id="sub-sub-headings"class="nav-link" href="#nse">NSE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-sub-headings" class="nav-link" href="#bse">BSE</a>
+                  </li>
+                  </ul>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#stock_brok">Stock Brokers</a>
+                  </li><li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#iandt">Investors and Traders</a>
+                  </li>
+                </ul><hr>
+                <ul class="navbar-nav">
+                  <h2 id="nav-title">Phases involved in Transfer of Shares</h2>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#tofs">Transfer of Shares</a>
+                  </li>
+                </ul><hr>
+                <ul class="navbar-nav">
+                  <h2 id="nav-title">Financial Ratios</h2>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#ratio">Ratios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings"class="nav-link" href="#ivc">Intrinsic Value Calculation</a>
+                  </li>
+                  </ul><hr>
+                <ul class="navbar-nav">
+                  <h2 id="nav-title">Financial Statements</h2>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#wfs">What is Financial Statements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings"class="nav-link" href="#pandl">Profit / Loss Statement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#bal_sheet">Balance Sheet</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings"class="nav-link" href="#cash-flow">Cash Flow Statement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#scet">Statement of Changes in Equity Terms</a>
+                  </li>
+                </ul><hr>
+                <ul class="navbar-nav">
+                  <h2 id="nav-title">Basics</h2>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#pfm">Personal Finance Management</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings"class="nav-link" href="#ib">Investment Basics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#ia">Investment Analysis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings"class="nav-link" href="#rm">Risk Management</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#is">Investment Strategies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings"class="nav-link" href="#mr">Market Research</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#itools">Investment Tools and Platforms</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings"class="nav-link" href="#rvsr">Risk vs. Return</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#ipsy">Investment Psychology</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings"class="nav-link" href="#ipro">Investor Protection</a>
+                  </li>
+                </ul><hr>
+                <ul class="navbar-nav">
+                  <h2 id="nav-title">Things To Consider</h2>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#ttocons">Things 2 Consider</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings"class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="sub-headings" class="nav-link" href="#"></a>
+                  </li>
+                </ul><hr>
+
+              </div>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul> -->
+                </li>
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="main_container">
+        <div><br></div>
+        <section  id="intro_fin_sys">
+        <h2>Financial System</h2>
+        <p>
+        The financial system is like a network that helps money and resources move around in an economy. It includes banks, markets, rules, and mechanisms that make it easier for people and businesses to save, borrow, invest, and exchange money. It also includes organizations that keep an eye on the system to make sure things are fair and stable. Financial institutions, like banks and insurance companies, are part of the system. They help people save money, give out loans, and provide other financial services. Financial markets, such as the stock market, bond market, and currency market, are places where people buy and sell things like company shares, bonds, and foreign currencies. Rules and regulations are important to keep the system fair and safe. There are organizations that make and enforce these rules to protect people and make sure everyone follows the same standards. Payment systems are also part of the financial system. They help people transfer money between each other, like when you pay for something using a credit card or make an online payment. Overall, the financial system helps people manage their money, invest in businesses, and make the economy work. It's like a big network that connects everyone and everything related to money in an organized way.
+        </p>
+        </section>
+       
+
+       <section id="fst">
+            <h2>Types of Financial System</h2>
+            <img src="../images/fin.png">
+            <ul>
+                <li><p>Financial Institutions</p></li>
+                <li><p>Financial Markets</p></li>
+                <li><p>Financial Instruments</p></li>
+                <li><p>Financial Services</p></li>
+            </ul>
+       </section>
+
+       <section id="est">
+            <h2>Explaination</h2>
+            <ul>
+               <li> 
+            <h4 >Financial Institutions:</h4>
+            <p class="indent">Financial institutions include banks, credit unions, insurance companies, investment firms, and other entities that offer financial services. They play a crucial role in mobilizing funds from savers and channeling them towards borrowers and investors. Financial institutions provide services such as accepting deposits, providing loans, facilitating investments, and managing risks.
+            </p>   </li>
+            <li>
+            <h4>Financial Markets:</h4>
+            <p class="indent">Financial markets provide a platform for buying and selling financial instruments such as stocks, bonds, commodities, currencies, and derivatives. They facilitate the transfer of funds from investors to borrowers or sellers and enable price discovery and liquidity. Examples of financial markets include stock exchanges, bond markets, commodity markets, and foreign exchange markets.
+            </p>
+            </li>
+            <li>
+            <h4 >Regulatory Bodies:</h4>
+            <p class="indent">Regulatory bodies are government or independent agencies responsible for overseeing and regulating the financial system. They establish and enforce rules, regulations, and standards to ensure fair and transparent practices, protect investors, maintain stability, and mitigate systemic risks. Regulatory bodies can include central banks, securities and exchange commissions, banking authorities, and insurance regulatory agencies.
+            </p></li>
+            <li>
+            <h4>Financial Instruments:</h4>
+               <p class="indent"> Financial instruments are contracts or agreements that represent a financial claim or ownership. They include stocks, bonds, options, futures, mortgages, loans, and insurance policies. These instruments allow individuals, businesses, and institutions to raise capital, manage risks, invest, and save.
+               </p>
+            </li>
+            <li>
+                <h4>Central Banks:</h4>
+                <p class="indent">Central banks are the primary monetary authorities in a country or a group of countries. They are responsible for formulating and implementing monetary policies, regulating banks, managing the money supply, and maintaining financial stability. Central banks also act as lenders of last resort to provide liquidity to financial institutions during times of crisis.</p>
+            </li>
+            <li>
+                <h4 >Financial Services:</h4>
+                <p class="indent">The range of services provided by financial institutions and professionals to individuals, businesses, and organizations. These services involve the management, investment, and allocation of financial resources, as well as the facilitation of financial transactions.</p>
+            </li>
+            </ul>
+       </section>
+       <section id="wfm">
+        <h2>Financial Markets</h2>
+
+        <p class="indent">Financial markets refer to platforms where buyers and sellers engage in trading various financial assets, such as stocks, bonds, currencies, commodities, and derivatives. These markets facilitate the allocation of capital and enable investors to buy or sell financial instruments based on their investment objectives and risk tolerance.</p>
+        
+        <h4>Functions of Financial Markets</h4>
+        
+        <ul>
+        <li><p><b>Price Discovery:</b> Financial markets determine the prices of financial assets based on supply and demand dynamics.</p></li>
+        <li><p><b>Liquidity:</b> They provide liquidity, enabling investors to easily buy or sell assets without significant price impact.</p></li>
+        <li><p><b>Capital Allocation:</b> Financial markets facilitate the allocation of capital by channeling funds from savers to borrowers or companies in need of financing.</p></li>
+        <li><p><b>Risk Management:</b> They offer risk management tools, such as derivatives, allowing investors to hedge against market fluctuations.</p></li>
+        <li><p><b>Investor Protection: </b>Financial markets operate under regulatory frameworks that aim to protect investors' interests and ensure fair trading practices.</p></li>
+        </ul>
+        
+        <h4>Market Participants</h4>
+    
+        <ul>
+        <li><p>Individual Investors</p></li>
+        <li><p>Institutional Investors (banks, pension funds, insurance companies)</p></li>
+        <li><p>Trader</p></li>
+        <li><p>Brokers and Dealers</p></li>
+        <li><p>Exchanges</p></li>
+        <li><p>Regulatory Authorities</p></li>
+        </ul>
+        
+        <h4>Importance of Financial Markets</h4>
+        
+        <p class="indent">Financial markets play a vital role in the economy by:</p>
+        
+        <ul>
+        <li><p>Facilitating capital formation and economic growth</p></li>
+        <li><p>Providing opportunities for investments and wealth creation</p></li>
+        <li><p>Enabling efficient allocation of resources</p></li>
+        <li><p>Supporting risk management and hedging strategies</p></li>
+        <li><p>Contributing to price stability and economic stability</p></li>
+        </ul>
+        
+        <p>Understanding financial markets is crucial for investors and participants to make informed decisions and navigate the complexities of the global financial system.</p>
+       </section>
+       <section id="fmt">
+        <h2>Types of Markets</h2>
+        <img src="../images/financial-market.jpeg">
+        <ul>
+        <li><p>Equity Market</p></li>
+        <li><p>Debt Market</p></li>
+        <li><p>Money Market</p></li>
+        <li><p>Capital Market</p></li>
+        <li><p>Cash Market (Spot Market)</p></li>
+        <li><p>Futures Market</p></li>
+        <li><p>Exchange-Traded Market</p></li>
+        <li><p>Over the Counter Market</p></li>
+        </ul>
+        
+       </section>
+       <section id="emt">
+    
+        <h2>Types of Financial Market</h2>
+        <ul>
+        <li>
+        <h3>By the Nature of the Claim:</h3>
+        
+        <ul>
+        <li>
+        <h5> Equity Market: </h5><p>Involves buying and selling shares of publicly traded companies. Example: Buying shares of Tesla Inc. on the NASDAQ stock exchange with the expectation of capital appreciation.</p>
+        </li>
+        <li>
+        <h5> Debt Market: </h5><p> Involves buying and selling of debt securities issued by governments and corporations. Example: Investing in US Treasury bonds to earn fixed interest income or purchasing corporate bonds issued by IBM Corporation.</p>
+        </li>
+        </ul>
+        </li>
+        <li>
+        <ul>
+        <h3>By the Maturity on Claim:</h3>
+        <li>
+        <h4>Short Tenure (less than 1 year)</h4>
+        
+        <h5>Money Market:</h5><p class="indent"> Deals with short-term borrowing and lending of funds, typically for periods of one year or less. It includes instruments such as Treasury bills, certificates of deposit, commercial paper, and repurchase agreements. Example: Investing in a 3-month Treasury bill issued by the government.</p>
+        
+        
+        <li>
+        <h4>Longer Maturity (more than 1 year)</h4>
+        
+        <ul>
+        <li>
+        <h5>Capital Market:</h5><p class="indent"> Deals with long-term borrowing and lending of funds, typically for periods exceeding one year.
+        </p></li>
+        <li>
+        <h5>Equity Market:</h5><p class="indent"> Involves the buying and selling of shares of publicly traded companies. Example: Purchasing shares of Apple Inc. on the New York Stock Exchange (NYSE)</p>.
+        </li>
+        <li>
+        <h5>Bond Market:</h5> <p class="indent">Involves the buying and selling of debt securities issued by governments and corporations. Example: Investing in corporate bonds issued by Microsoft Corporation.</p>
+        </li>
+        <li>
+        <h5>Real Estate Market:</h5> <p class="indent">Involves the buying, selling, and renting of properties such as residential and commercial buildings. Example: Buying a residential property for investment purposes or renting an office space for business operations.</p>
+        </li>
+        </ul>
+        </li>
+        </li>
+        </ul>
+        <li>
+        <h3>Based on the Organisational Structure:</h3>
+        
+        <ul>
+        <li>
+        <h5>Exchange-Traded Market:</h5><p class="indent"> A marketplace where people can buy and sell financial products like stocks, bonds, commodities, and derivatives. It's a centralized location with regulated and organized trading. Prices are public, and fair trading practices are ensured. Examples include stock exchanges and commodity exchanges.</p>
+        </li>
+        <li>
+        <h5>Over the Counter Market (OTC):</h5><p class="indent"> A decentralized marketplace where trading happens directly between two parties without a central exchange. Buyers and sellers negotiate and trade through phone, email, or electronic platforms.</p>
+        </li>
+        </ul>
+        </li>
+        <li>
+        <h3>Based on the timing of delivery:</h3>
+        
+        <ul>
+        <li>
+        <h5>Cash Market (Spot Market):</h5><p class="indent"> Financial instruments are bought and sold for immediate delivery and payment. Transactions are settled "on the spot," meaning the buyer pays and the seller delivers the asset immediately. This market deals with the immediate exchange of goods or securities for cash at the current market price.</p> <p>Example: Cash market transactions occur when you buy fruits, vegetables, or any other product at a grocery store by paying cash.</p>
+        </li>
+        <li>
+        <h5>Futures Market:</h5><p class="indent"> Involves trading standardized contracts called futures contracts. These contracts specify the delivery of an underlying asset at a predetermined future date and price. Parties involved agree to buy or sell the asset on a specified future date, regardless of the current market price at that time. Futures contracts are traded on exchanges with standardized terms and conditions (including quantity, quality, and delivery date).</p> <p>Example: A farmer entering a futures contract to sell a certain quantity of corn to a buyer at a predetermined price and delivery date. The transaction will be settled at the agreed-upon future date, regardless of the current market price of corn.</p>
+        </li>
+        <li>
+        <h5>Foreign Exchange Market</h5>
+        <p class="indent">The Foreign Exchange Market facilitates the buying and selling of different currencies. It allows individuals, businesses, and financial institutions to exchange one currency for another, enabling international trade and investment.  Imagine exchanging US Dollars (USD) for Euros (EUR) before a trip to Europe.</p>
+        </li>
+        <li>
+        <h5>Commodity Market</h5>
+        <p class="indent">The Commodity Market deals with buying and selling of raw materials like gold, oil, agricultural products, and industrial metals.  Here, you might purchase gold bullion as a hedge against inflation or trade contracts for crude oil futures.</p>
+        </li>
+        <li>
+        <h5>Cryptocurrency Market</h5>
+        <p class="indent">The Cryptocurrency Market involves buying and selling digital currencies like Bitcoin, Ethereum, and others. These cryptocurrencies operate on decentralized networks using blockchain technology, allowing secure and direct transactions between individuals (peer-to-peer).  An example is buying Bitcoin (BTC) or Ethereum (ETH).</p>
+            </li>
+        </ul>
+        </li>
+        </ul>
+    </section>
+    
+    <section id="wcm">
+      <h2>Capital Market</h2>
+<p>The capital market is a financial market where long-term securities such as stocks and bonds are bought and sold. It facilitates the transfer of capital from investors to businesses or governments in need of funding for various purposes.</p>
+
+<h3>Types of Capital Market</h3>
+<ul>
+<li>
+<h4>Primary Market</h4>
+<p>The primary market is where new securities are issued and sold for the first time. It allows companies and governments to raise fresh capital by selling stocks or bonds directly to investors.</p>
+</li>
+<li>
+<h4>Secondary Market</h4>
+<p>The secondary market is where previously issued securities are traded among investors. It provides liquidity to investors by allowing them to buy or sell existing securities without involving the issuing companies.</p>
+</li>
+</ul>
+
+<h3>Functions of Capital Market</h3>
+<ul>
+<li><p><b>Facilitating Capital Formation: </b>The capital market enables businesses and governments to raise funds for investment and expansion by issuing securities to interested investors.</p></li>
+<li><p><b>Providing Liquidity:</b> The secondary market allows investors to buy and sell securities, providing liquidity and ensuring the marketability of investments.</p></li>
+<li><p><b>Price Determination: </b>Capital markets facilitate the discovery of fair prices for securities through the forces of supply and demand.</p></li>
+<li><p><b>Risk Transfer:</b> Investors can transfer their investment risks by buying and selling securities in the capital market.</p></li>
+<li><p><b>Investor Protection: </b>Capital markets often have regulations and mechanisms in place to protect the interests of investors and maintain market integrity.</p></li>
+</ul>
+  </section>
+  <section id="pm"><h2>Primary Market</h2>
+
+<p>The primary market, also known as the new issue market, is where securities are issued and sold for the first time by companies or governments to raise capital. It is the initial offering of securities to the public.</p>
+
+<h3>Functions of the Primary Market</h3>
+
+<ul>
+<li><p><b>Raising Capital:</b> The primary market enables companies to raise funds for business expansion, project financing, debt repayment, research and development, and other capital requirements.</p></li>
+<li><p><b>Facilitating Ownership Transfer:</b> Through the primary market, ownership of a company is transferred from private ownership to public ownership by issuing shares to the general public.</p></li>
+<li><p><b>Price Discovery:</b> The primary market helps in determining the initial price of securities based on market demand and investor appetite, establishing the fair value of the securities.</p></li>
+<li><p><b>Increasing Market Liquidity:</b> By listing on the primary market, companies provide an opportunity for investors to buy and sell their shares, increasing market liquidity.</p></li>
+<li>
+<p><b>Underwriting: </b>
+Involves an agreement where an underwriter, typically a financial institution, guarantees the sale of a company's shares by purchasing the unsold shares or finding buyers for them.</p>
+</li>
+</ul>
+
+<h3>Types of Primary Market Offerings</h3>
+
+<ul>
+<li><p><b>Initial Public Offering (IPO):</b> An IPO is the first sale of securities by a company to the public. It allows companies to raise capital and become publicly traded entities.</p></li>
+<li><p><b>Follow-on Public Offering (FPO):</b> An FPO is a subsequent offering of securities by a company that is already listed on the stock exchange. It helps companies raise additional capital for expansion or other purposes.</p></li>
+<li><p><b>Rights Issue:</b> A rights issue allows existing shareholders to purchase additional shares of the company at a discounted price in proportion to their existing holdings.</p></li>
+<li><p><b>Private Placement:</b> Private placement involves the sale of securities directly to institutional investors or a select group of investors, bypassing the public offering process.</p></li>
+<li><p><b>Qualified Institutional Placement (QIP):</b> A QIP is a private placement of securities exclusively to qualified institutional buyers, such as banks, financial institutions, and mutual funds.</p></li>
+</ul>
+  </section>
+  <section id="sm">
+<h2>Secondary Market</h2>
+
+<p>The secondary market, also known as the stock market or stock exchange, is where already issued securities are bought and sold among investors. It provides a platform for trading previously issued securities.</p>
+
+<h3>Examples of Secondary Market</h3>
+<ul>
+<li><p><b>Bombay Stock Exchange (BSE):</b> It is one of the oldest stock exchanges in Asia and the largest stock exchange in India.</p></li>
+<li><p><b>National Stock Exchange (NSE):</b> It is the leading stock exchange in India that provides a modern, fully automated trading platform.</p>
+</li>
+</ul>
+<h3>Functions of the Secondary Market</h3>
+
+<ul>
+<li><p><b>Liquidity:</b> The secondary market provides liquidity to investors, allowing them to buy or sell securities at any time, based on supply and demand.</p></li>
+<li><p><b> Determination:</b> It helps in determining the fair market price of securities based on the forces of supply and demand.</p></li>
+<li><p><b>Facilitating Trading:</b> The secondary market facilitates the buying and selling of securities through various trading mechanisms, such as stock exchanges and electronic trading platforms.</p></li>
+<li><p><b>Investment Opportunities:</b> It provides opportunities for investors to diversify their portfolios and invest in a wide range of securities, including stocks, bonds, derivatives, and exchange-traded funds.</p>
+</ul>
+
+<h3>Types of Secondary Market</h3>
+
+<ul>
+<li>
+<h5>Stock Market</h5>
+<p>It is the market where shares of publicly listed companies are bought and sold.</p>
+</li>
+<li>
+<h5>Bond Market</h5>
+<p>It is the market for buying and selling debt securities, such as government bonds, corporate bonds, and municipal bonds.</p>
+</li>
+<li>
+<h5>Derivatives Market</h5>
+<p>It is the market for trading financial contracts derived from underlying assets, such as futures contracts, options contracts, and swaps.</p>
+</li>
+<li>
+<h5>Commodity Market</h5>
+<p>It is the market for trading commodities, such as gold, silver, crude oil, agricultural products, etc.</p>
+</li>
+<li>
+<h5>Foreign Exchange Market</h5>
+<p>It is the market where currencies are bought and sold, facilitating international trade and investment.</p>
+</li>
+</ul>
+
+  </section>
+
+  <section id="sebi">
+      <h2>SEBI - Securities and Exchange Board of India</h2>
+
+<h4>About SEBI</h4>
+
+<p>The Securities and Exchange Board of India (SEBI) is the regulatory authority for the securities market in India. It was established in 1988 and operates under the Securities and Exchange Board of India Act, 1992.</p>
+
+<h4>Uses and Importance</h4>
+
+<ul>
+<li>
+<h5>Regulation and Oversight</h5>
+<p>SEBI regulates and oversees various entities in the securities market, ensuring fair practices, transparency, and investor protection.</p>
+</li>
+<li>
+<h5>Protection</h5>
+<p>SEBI safeguards the interests of investors by promoting disclosure of accurate information, preventing fraudulent practices, and enhancing investor awareness.</p>
+</li>
+<li>
+<h5>Market Development</h5>
+<p>SEBI fosters the development and growth of the securities market, introducing reforms to enhance efficiency, liquidity, and integrity.</p>
+</li>
+<li>
+<h5>Regulatory Framework</h5>
+<p>SEBI establishes and enforces rules and regulations governing aspects such as listing, trading, corporate governance, and disclosure requirements.</p>
+</li>
+<li>
+<h5>Market Surveillance and Enforcement</h5>
+<p>SEBI monitors the securities market, detects manipulative activities, and takes enforcement actions against violators.</p>
+</li>
+</ul>
+
+<h3>SEBI's Role</h3>
+
+<p>SEBI plays a crucial role in maintaining market integrity, investor confidence, and the overall stability of the securities market in India. It regulates market participants, enforces compliance, and ensures a fair and transparent environment for investors.</p>
+
+</section>
+<section id="stock_exc">
+<h2>Stock Exchange</h2>
+
+<h4>Definition</h4>
+
+<p>A stock exchange is a regulated marketplace where buyers and sellers come together to trade securities such as stocks, bonds, and derivatives.</p>
+
+<p>It is a platform that facilitates the buying and selling of securities among investors, providing liquidity and price discovery for listed securities.</p>
+
+<h4>Role of Stock Exchange</h4>
+
+<ul>
+<li>
+<h5>Facilitating Capital Formation</h5>
+<p>Stock exchanges allow companies to raise capital by issuing securities to the public.</p>
+</li>
+<li>
+<h5>Providing Liquidity and Marketability</h5>
+<p>Stock exchanges create a secondary market where investors can easily buy or sell securities.</p>
+</li>
+<li>
+<h5>Price Discovery</h5>
+<p>Stock exchanges determine the prices of securities through supply and demand, ensuring fair valuations.</p>
+</li>
+<li>
+<h5>Regulatory Framework</h5>
+<p>Stock exchanges operate under strict regulations enforced by regulatory bodies such as SEBI.</p>
+</li>
+<li>
+<h5>Investor Protection</h5>
+<p>Stock exchanges enforce rules and regulations to protect investor interests and ensure transparency.</p>
+</li>
+<li>
+<h5>Market Monitoring and Surveillance</h5>
+<p>Stock exchanges monitor trading activities to maintain market integrity.</p>
+</li>
+<li>
+<h5>Economic Barometer</h5>
+<p>Stock exchanges reflect the overall health and performance of the economy.</p>
+</li>
+</ul>
+
+<h4>Importance of Stock Exchange in India</h4>
+
+<ul>
+<li>
+<h5>Capital Formation</h5>
+<p>Stock exchanges facilitate capital formation by allowing companies to raise funds for expansion and growth.</p>
+</li>
+<li>
+<h5>Liquidity and Market Efficiency</h5>
+<p>Stock exchanges provide liquidity to investors and improve market efficiency.</p>
+</li>
+<li>
+<h5>Investor Confidence</h5>
+<p>Transparent price discovery and regulatory framework enhance investor confidence in the market.</p>
+</li>
+<li>
+<h5>Corporate Governance</h5>
+<p>Stock exchanges enforce corporate governance norms, ensuring transparency and accountability.</p>
+</li>
+<li>
+<h5>Economic Growth</h5>
+<p>Stock exchanges contribute to the overall economic growth by channeling savings into productive investments.</p>
+</li>
+</ul>
+  </section>
+
+<section id="nse">
+<h2>National Stock Exchange (NSE)</h2>
+
+<h4>History of NSE</h4>
+
+<p>The National Stock Exchange (NSE) was established in 1992 and is one of the leading stock exchanges in India. It was promoted by leading financial institutions with the aim of bringing transparency and efficiency to the Indian capital market.</p>
+
+<h4>Trading Holidays</h4>
+
+<p>The NSE observes trading holidays on certain days throughout the year. Some of the major holidays include national holidays, festivals, and public events. Here's a table for your reference:</p>
+
+<table border="1">
+<tr>
+<th>Date</th>
+<th>Day</th>
+<th>Holiday</th>
+</tr>
+<tr>
+<td>January 1, 2023</td>
+<td>Sunday</td>
+<td>New Year's Day</td>
+</tr>
+<tr>
+<td>January 26, 2023</td>
+<td>Thursday</td>
+<td>Republic Day</td>
+</tr>
+<tr>
+<td>March 29, 2023</td>
+<td>Wednesday</td>
+<td>Mahashivratri</td>
+</tr>
+</table>
+
+<p>Please note: These dates are subject to change. It's always recommended to check with the exchange or your broker for the most up-to-date information on trading holidays.</p>
+
+<h4>About Stock Market Indices</h4>
+
+<p>The NSE manages and calculates various stock market indices that provide insights into the overall performance of the market or specific sectors. These indices serve as benchmarks and indicators for investors and market participants.</p>
+
+<ul>
+<li>
+<p><b>Nifty 50:</b> Flagship index, comprising 50 largest & most actively traded stocks</p>
+</li>
+<li>
+<p><b>Nifty Bank:</b> Represents the banking sector, includes major banking stocks</p>
+</li>
+<li>
+<p><b>Nifty IT:</b> Tracks performance of IT (Information Technology) sector stocks</p>
+</li>
+<li>
+<p><b>Nifty Energy:</b> Represents the energy sector, includes oil, gas, and power stocks</p>
+</li>
+</ul>
+<p>For more information, you can visit the official website of <a href="https://www.nseindia.com/"> NSE </a>.</p>
+</section>
+<section id="bse">
+<h2>BSE (Bombay Stock Exchange)</h2>
+
+<h4>History</h4>
+
+<p>The Bombay Stock Exchange (BSE) is the oldest stock exchange in Asia, established in 1875. It is located in Mumbai, India.</p>
+
+<h4>Holidays</h4>
+
+<p>Similar to NSE, the BSE also observes holidays on various days throughout the year. You can find the details on their official website: BSE Official Website: link to BSE website</p>
+
+<h4>About Index</h4>
+
+<p>The BSE has various indices that represent the performance of different sectors and stocks. Here are some prominent ones:</p>
+
+<ul>
+<li><p>S&P BSE Sensex: Top 30 stocks based on market capitalization</p></li>
+<li><p>S&P BSE 500: Top 500 companies based on market capitalization</p></li>
+<li><p>S&P BSE MidCap: Represents performance of mid-sized companies</p></li>
+<li><p>S&P BSE SmallCap: Represents performance of small-sized companies</p></li>
+</ul>
+
+<p>For more information, you can visit the official website of <a href="https://www.bseindia.com/">BSE</a> website</p>
+</section>
+<section id="stock_brok">
+<h2>Stock Brokers</h2>
+
+<h4>Definition of Stock Brokers</h4>
+
+<p>A stock broker is an individual or a firm that facilitates the buying and selling of securities on behalf of investors in the stock market. They act as intermediaries between buyers and sellers, executing trades and providing various financial services.</p>
+
+<h4>Examples of Stock Brokers in India</h4>
+
+<ul>
+<li><p>HDFC Securities</p></li>
+<li><p>Kotak Securities</p></li>
+<li><p>Angel One</p></li>
+<li><p>Sharekhan</p></li>
+<li><p>Zerodha</p></li>
+</ul>
+
+<h4>Role of Stock Brokers in India</h4>
+
+<ul>
+<li>
+<h4>Order Execution</h4>
+<p>Stock brokers execute buy and sell orders on behalf of their clients in the stock market.</p>
+</li>
+<li>
+<h4>Investment Advice</h4>
+<p>They provide investment advice and recommendations based on research and market analysis to help clients make informed investment decisions.</p>
+</li>
+<li>
+<h4>Portfolio Management</h4>
+<p>Stock brokers offer portfolio management services, where they manage and monitor clients' investment portfolios.</p>
+</li>
+<li>
+<h4>Trading Platforms</h4>
+<p>They provide online trading platforms and tools that enable investors to place trades and monitor their investments in real-time.</p>
+</li>
+<li>
+<h4>Research and Analysis</h4>
+<p>Stock brokers conduct research and analysis on various stocks and market trends to provide insights and recommendations to their clients.</p>
+</li>
+<li>
+<h4>Account Management</h4>
+<p>They assist clients in opening and managing trading accounts, demat accounts, and other necessary financial accounts.</p>
+</li>
+<li>
+<h4>Compliance and Regulations</h4>
+<p>Stock brokers ensure compliance with regulatory requirements and maintain necessary licenses and registrations to operate in the stock market.</p>
+</li>
+</ul>
+
+<h4>Importance of Stock Brokers in India</h4>
+
+<ul>
+<li>
+<h4>Market Access</h4>
+<p>Stock brokers provide individuals and institutions with easy access to the stock market, allowing them to participate in trading and investment activities.</p>
+</li>
+<li>
+<h4>Liquidity</h4>
+<p>They contribute to market liquidity by matching buyers and sellers and executing trades efficiently.</p>
+</li>
+<li>
+<h4>Expertise and Guidance</h4>
+<p>Stock brokers possess expertise in financial markets and provide guidance and support to investors, especially beginners, in making investment decisions.</p>
+</li>
+<li>
+<h4>Efficient Trading</h4>
+<p>Stock brokers enable quick and efficient trading by leveraging advanced technology and providing seamless trading platforms.</p>
+</li>
+<li>
+<h4>Regulatory Compliance</h4>
+<p>They ensure compliance with regulatory guidelines and protect the interests of investors by adhering to ethical practices and following market regulations.</p>
+</li>
+</ul>
+  </section>
+  <section id="iandt">
+    <h2> Investors and Traders</h2>
+ 
+    <h3>Investors</h3>
+     <h4>Definition of Investors</h4>
+     
+     <p>Investors are individuals or institutions who allocate capital with the expectation of generating a return or gaining ownership in an asset. They aim for long-term growth and income by investing in various financial instruments.</p>
+     
+     <h4>Types of Investors</h4>
+     
+     <ul>
+     <li>
+     <p><b>Individual Investors:</b> Retail investors who invest their personal savings in the stock market, mutual funds, fixed deposits, etc.
+     </p></li>
+     <li>
+     <p><b>Institutional Investors:</b> Entities such as banks, insurance companies, pension funds, and hedge funds that invest on behalf of their clients or policyholders.</p>
+     <ul>
+     <p><li><b>Domestic Institutional Investors (DIIs):</b> Institutional investors based in India. They play a crucial role in the financial market. (Eg. Life Insurance Corporation of India (LIC), State Bank of India (SBI) Mutual Fund)</li></p>
+     <p><li><b>Foreign Institutional Investors (FIIs):</b> Foreign entities that invest in the Indian financial markets.</li></p>
+     </ul>
+     </li>
+     <li>
+     <p><b>Angel Investors:</b> High-net-worth individuals who provide capital to startups and early-stage companies in exchange for equity ownership.</p>
+     </li>
+     <li>
+     <p><b>Venture Capitalists (VCs):</b> Investment firms that provide funding to startups in exchange for equity stakes and actively participate in the company's growth.</p>
+     </li>
+     </ul>
+     
+     <h4>Role of Investors</h4>
+     
+     <ul>
+     <p><li><b>Capital Allocation:</b> Allocate capital to different assets and businesses, providing them with funds for growth and expansion.</li></p>
+     <p><li><b>Risk Management:</b> Diversify investments across various asset classes to manage risk and minimize potential losses.</li></p>
+     <p><li><b>Long-Term Growth:</b> Aim for long-term capital appreciation and wealth creation through investment strategies.</li></p>
+     <p><li><b>Corporate Governance:</b> Institutional investors play a significant role by participating in shareholder meetings and exercising </p>voting rights.</li>
+     <p><li><b>Market Stability:</b> Contribute to market stability by providing liquidity and holding investments for longer durations.</li></p>
+     </ul>
+         <h3>Traders</h3>
+     <h4>Definition of Traders</h4>
+     
+     <p>Traders are individuals or entities who engage in buying and selling financial instruments in the market with the primary goal of making short-term profits. They capitalize on market fluctuations and employ various trading strategies.</p>
+     
+     <h4>Types of Traders</h4>
+     
+     <ul>
+     <li><p>
+     <b>Day Traders:</b> Execute trades within a single trading day and close all positions before the market closes.</p>
+     </li>
+     <li>
+     <p><b>Swing Traders:</b> Hold positions for a few days to several weeks, aiming to capture short-term price movements.</p>
+     </li>
+     <li><p>
+     <b>Position Traders:</b> Hold positions for an extended period, ranging from weeks to months or even years, based on long-term trends and fundamental analysis.</p>
+     </li>
+     <li>
+     <p><b>Algorithmic Traders:</b> Use computer algorithms to execute trades automatically, leveraging quantitative models and high-speed trading systems.</p>
+     </li>
+     <li><p>
+     <b>Arbitrageurs:</b> Take advantage of price discrepancies in different markets or securities to make risk-free profits.
+     </p></li>
+     </ul>
+     
+     <h4>Role of Traders</h4>
+     
+     <ul>
+     <li><p><b>Price Discovery:</b> Contribute to price discovery by actively buying and selling securities, leading to efficient pricing in the market.</p></li>
+     <li><p><b>Liquidity Provision:</b> Provide liquidity to the market by executing trades and facilitating smooth transactions.</p></li>
+     <li><p><b>Market Efficiency:</b> Help in improving market efficiency by quickly reacting to news, information, and market trends.</p></li>
+     <li><p><b>Speculation:</b> Engage in speculative trading to profit from short-term price movements, leveraging their skills and market analysis.</p></li>
+     <li><p><b>Volatility Management:</b> Use various strategies to manage and capitalize on market volatility, reducing potential risks.</p></li>
+     </ul>
+ 
+ </section>
+ 
+ <section id="tofs">
+ 
+    <h2> Share Transfer Process</h2>
+ <p>Share transfer refers to the process of transferring ownership of shares from one party (transferor) to another party (transferee). It involves legal and financial procedures to facilitate this change in ownership.</p>
+ 
+ <h4>Understanding the Process with an Example</h4>
+ 
+ <p>Imagine Mr. A wants to sell 100 shares of XYZ Company to Mr. B. Here's how the share transfer process unfolds:</p>
+ <ol>
+ <li><h5>Execution of Transfer Deed:</h5>
+ 
+ <p>The first step involves a transfer deed. This document, signed by both Mr. A and Mr. B, details the transfer agreement. It includes information like their names (transferor and transferee), the number of shares being transferred, and the agreed-upon consideration amount for the transfer.</p></li>
+ 
+ <li><h5>Clearance by the Company:</h5>
+ 
+ <p>Next, Mr. A submits the transfer deed to XYZ Company. The company verifies the transfer details and ensures compliance with their rules and regulations. Upon successful verification, the company approves the transfer.</p></li>
+ 
+ <li><h5>Clearance by the Depository (if applicable):</h5>
+ 
+ <p>If the shares are held electronically (demat), Mr. A's depository participant (DP) or central depository verifies the transfer details. The DP then initiates the transfer process within the electronic system.</p></li>
+ 
+ <li><h5>Transfer in Depository System (if applicable):</h5>
+ 
+ <p>(For demat shares) The shares are electronically transferred from Mr. A's demat account to Mr. B's demat account within the depository system. This transfer is reflected in the electronic records maintained by the depository.</p></li>
+ 
+ <li><h5>Update of Shareholding:</h5>
+ 
+ <p>Once the transfer is complete, Mr. B's ownership of the 100 shares is recorded in both the company's share register and his demat account. Mr. A's ownership of the transferred shares is extinguished.</p></li>
+ 
+ <h4>Depositories in India</h4>
+ 
+ <p>India has two major depositories facilitating the electronic holding and transfer of shares:</p>
+ 
+ <h4>National Securities Depository Limited (NSDL):</h4>
+ 
+ <p>NSDL is a leading depository offering dematerialization and settlement services for various securities, including equities and debt instruments.</p>
+ 
+ <h5>Functions of NSDL include:</h5>
+ 
+ <ul>
+ <li><p>Opening and maintaining demat accounts for investors.</p></li>
+ <li><p>Electronic settlement of trades in stock exchanges.</p></li>
+ <li><p>Safekeeping and maintaining securities in electronic form.</p></li>
+ <li><p>Transfer of securities through a book-entry system.</p></li>
+ <li><p>Facilitating corporate actions like dividends, bonus issues, etc.</p></li>
+ </ul>
+ 
+ <h4>Central Depository Services Limited (CDSL):</h4>
+ 
+ <p>CDSL is another prominent depository offering dematerialization, settlement, and other related services for securities.</p>
+ 
+ <h5>Functions of CDSL include:</h5>
+ 
+ <ul>
+     <li><p>Settlement of trades in stock exchanges.</p></li>
+     <li><p>Maintaining electronic records of securities.</p></li>
+     <li><p>Facilitating transfer of securities electronically.</p></li>
+     <li><p>Handling corporate actions like dividends, rights issues, etc.</p></li>
+     <li><p>Providing demat account services to investors.</p></li>
+ </ul>
+ 
+ <p>By eliminating the need for physical share certificates and enabling seamless electronic transfers, these depositories play a crucial role in promoting efficiency, transparency, and security in share transfer processes.</p>
+ 
+ <p>For more information, you can refer to the official websites of the depositories <a href="https://nsdl.co.in/">NSDL </a>&nbsp; <a href="https://www.cdslindia.com/">CDSL</a></p>
+ 
+ </section>
+ 
+ <section id="ratio">
+     <h2>Ratios</h2>
+     <ol>
+         <li>
+             <h5><b>Return on Assets (ROA)</b></h5>
+             <p><b>Definition:</b> ROA measures how efficiently a company utilizes its assets to generate profits. It indicates the percentage of each rupee of assets that generates net income.</p>
+             <p><b>Formula:</b> <em>ROA = (Net Income / Average Total Assets) x 100</em></p>
+             <p><b>Uses:</b> ROA helps assess the profitability and efficiency of asset utilization. Higher ROA indicates better performance. For example, a company with an ROA of 15% means it generates ₹0.15 of net income for every rupee of assets invested.</p>
+         </li>
+         <li>
+             <h5><b>Return on Investment (ROI)</b></h5>
+             <p><b>Definition:</b> ROI evaluates the return on an investment relative to its cost. It shows the percentage gain or loss on an investment.</p>
+             <p><b>Formula:</b> <em>ROI = (Net Profit / Cost of Investment) x 100</em></p>
+             <p><b>Uses:</b> ROI helps assess the profitability of an investment. It enables comparison between different investment options. For example, if an investment of ₹10,000 generates a net profit of ₹2,000, the ROI would be 20%, indicating a 20% return on the investment.</p>
+         </li>
+         <li>
+             <h5><b>Gross Margin Ratio</b></h5>
+             <p><b>Definition:</b> The gross margin ratio indicates the profitability of a company's core operations by measuring the percentage of revenue that remains after deducting the cost of goods sold.</p>
+             <p><b>Formula:</b> <em>Gross Margin Ratio = (Gross Profit / Revenue) x 100</em></p>
+             <p><b>Uses:</b> The gross margin ratio helps assess the profitability of a company's products or services. Higher gross margin ratio implies better profitability. For example, if a company has a gross margin ratio of 40%, it means it retains ₹0.40 as gross profit for every rupee of revenue generated.</p>
+         </li>
+         <li>
+             <h5><b>Operating Margin Ratio</b></h5>
+             <p><b>Definition:</b> The operating margin ratio assesses a company's operating efficiency and profitability by measuring the percentage of each rupee of revenue that translates into operating income.</p>
+             <p><b>Formula:</b> <em>Operating Margin Ratio = (Operating Income / Revenue) x 100</em></p>
+             <p><b>Uses:</b> The operating margin ratio helps evaluate the profitability of a company's core operations. Higher operating margin ratio indicates better operating efficiency. For example, if a company has an operating margin ratio of 15%, it means it generates ₹0.15 of operating income for every rupee of revenue earned.</p>
+         </li>
+         <li>
+             <h5><b>Debt-to-Equity Ratio</b></h5>
+             <p><b>Definition:</b> The debt-to-equity ratio evaluates a company's capital structure and financial leverage by comparing its total debt to shareholders' equity.</p>
+             <p><b>Formula:</b> <em>Debt-to-Equity Ratio = Total Debt / Shareholders' Equity</em></p>
+             <p><b>Uses:</b> The debt-to-equity ratio helps assess a company's financial risk and solvency. It indicates the proportion of financing provided by debt and equity. A lower ratio is generally preferred, as it signifies a lower risk of financial distress. For example, if a company has a debt-to-equity ratio of 0.8, it means it has ₹0.80 of debt for every rupee of shareholders' equity.</p>
+         </li>
+         <li>
+             <h5><b>Current Ratio</b></h5>
+             <p><b>Definition:</b> The current ratio measures a company's ability to meet its short-term obligations using its current assets.</p>
+             <p><b>Formula:</b> <em>Current Ratio = Current Assets / Current Liabilities</em></p>
+             <p><b>Use:</b> The current ratio helps assess a company's short-term liquidity. A ratio of 2 or higher is generally considered favorable, indicating a strong ability to cover short-term obligations. For example, if a company has current assets of ₹1,00,000 and current liabilities of ₹50,000, the current ratio would be 2, indicating a healthy liquidity position.</p>
+         </li>
+         <li>
+             <h5><b>Earnings Per Share (EPS)</b></h5>
+             <p><b>Definition:</b> EPS measures the portion of a company's profit allocated to each outstanding share of common stock.</p>
+             <p><b>Formula:</b> <em>EPS = (Net Income - Preferred Dividends) / Average Outstanding Shares</em></p>
+             <p><b>Use:</b> EPS helps assess a company's profitability on a per-share basis. Higher EPS indicates higher profitability. For example, if a company has a net income of ₹5,00,000, preferred dividends of ₹50,000, and 1,00,000 outstanding shares, the EPS would be ₹4.50 (₹4.50 per share).</p>
+         </li>
+         <li>
+             <h5><b>Price-to-Earnings Ratio (P/E Ratio)</b></h5>
+             <p><b>Definition:</b> The P/E ratio compares a company's stock price to its earnings per share, indicating the market's valuation of the company.</p>
+             <p><b>Formula:</b> <em>P/E Ratio = Market Price per Share / Earnings Per Share</em></p>
+             <p><b>Use:</b> The P/E ratio helps assess a company's valuation relative to its earnings. Higher P/E ratios generally imply higher market expectations. For example, if a company's stock is trading at ₹100 per share and has an EPS of ₹5, the P/E ratio would be 20x (20 times earnings).</p>
+         </li>
+         <li>
+             <h5><b>Dividend Yield</b></h5>
+             <p><b>Definition:</b> Dividend Yield measures the return on investment from dividends distributed by a company.</p>
+             <p><b>Formula:</b> <em>Dividend Yield = (Dividends per Share / Market Price per Share) x 100</em></p>
+             <p><b>Use:</b> Dividend Yield helps assess the income generated from dividends relative to the stock price. Higher dividend yield indicates higher returns from dividends. For example, if a company pays dividends of ₹10 per share and its stock is trading at ₹200 per share, the dividend yield would be 5%.</p>
+         </li>
+         10. Debt Ratio
+Definition: The debt ratio evaluates the proportion of a company's assets that are financed by debt.
+
+Formula: Debt Ratio = Total Debt / Total Assets
+
+Use: The debt ratio helps assess a company's financial risk and leverage. A lower ratio is generally preferred, indicating lower risk. For example, if a company has total debt of ₹50,00,000 and total assets of ₹1,00,00,000, the debt ratio would be 0.5, indicating that 50% of the assets are financed by debt.
+
+11. Return on Equity (ROE)
+Definition: ROE measures the profitability of a company's shareholders' equity.
+
+Formula: ROE = Net Income / Shareholders' Equity
+
+Use: ROE helps assess the efficiency of a company in generating profits from the shareholders' investments. Higher ROE indicates better profitability. For example, if a company has a net income of ₹10,00,000 and shareholders' equity of ₹50,00,000, the ROE would be 20%.
+
+12. Gross Profit Margin
+Definition: Gross Profit Margin measures the percentage of revenue remaining after deducting the cost of goods sold.
+
+Formula: Gross Profit Margin = (Gross Profit / Revenue) x 100
+
+Use: Gross Profit Margin helps assess a company's ability to generate profits from its core operations. Higher margins indicate better profitability. For example, if a company has a gross profit of ₹5,00,000 and revenue of ₹10,00,000, the gross profit margin would be 50%.
+
+13. Return on Assets (ROA)
+Definition: ROA measures the profitability of a company's total assets.
+
+Formula: ROA = Net Income / Total Assets
+
+Use: ROA helps assess a company's efficiency in utilizing its assets to generate profits. Higher ROA indicates better asset utilization. For example, if a company has a net income of ₹8,00,000 and total assets of ₹40,00,000, the ROA would be 20%.
+
+14. Operating Margin
+Definition: Operating Margin measures the profitability of a company's core operations.
+
+Formula: Operating Margin = (Operating Income / Revenue) x 100
+
+Use: Operating Margin helps assess the profitability of a company's core business activities. Higher margins indicate better operational efficiency. For example, if a company has an operating income of ₹3,00,000 and revenue of ₹10,00,000, the operating margin would be 30%.
+
+15. Asset Turnover Ratio
+Definition: Asset Turnover Ratio measures the efficiency of a company in utilizing its assets to generate sales.
+
+Formula: Asset Turnover Ratio = Revenue / Average Total Assets
+
+Use: Asset Turnover Ratio helps assess how effectively a company is using its assets to generate revenue. Higher ratios indicate better asset utilization. For example, if a company has revenue of ₹20,00,000 and average total assets of ₹50,00,000, the asset turnover ratio would be 0.4.
+
+16. Inventory Turnover Ratio
+Definition: Inventory Turnover Ratio measures the efficiency of a company in managing its inventory.
+
+Formula: Inventory Turnover Ratio = Cost of Goods Sold / Average Inventory
+
+Use: Inventory Turnover Ratio helps assess how quickly a company sells its inventory. It indicates inventory management effectiveness. For example, if the cost of goods sold is ₹10,00,000 and the average inventory is ₹2,00,000, the inventory turnover ratio would be 5.
+
+17. Debt Ratio
+Definition: Debt Ratio measures the proportion of a company's assets financed by debt.
+
+Formula: Debt Ratio = Total Debt / Total Assets
+
+Use: Debt Ratio helps assess a company's leverage and financial risk. A higher ratio indicates a higher debt burden. For example, if a company has total debt of ₹20,00,000 and total assets of ₹50,00,000, the debt ratio would be 0.4 or 40%.
+
+18. Return on Investment Capital (ROIC)
+Definition: Return on Investment Capital measures the return generated from all invested capital, including both equity and debt.
+
+Formula: ROIC = Net Operating Profit After Tax / Invested Capital
+
+Use: ROIC helps assess the efficiency and profitability of both equity and debt investments. It indicates the return generated for all capital providers. For example, if a company has a net operating profit after tax of ₹5,00,000 and invested capital of ₹25,00,000, the ROIC would be 0.2 or 20%.
+
+19. Price-to-Book Ratio (P/B Ratio)
+Definition: P/B Ratio compares a company's market price per share to its book value per share.
+
+Formula: P/B Ratio = Market Price per Share / Book Value per Share
+
+Use: P/B Ratio helps assess the valuation of a company's stock relative to its net assets. It indicates the market's perception of the company's value. For example, if a company's stock has a market price of ₹200 per share and a book value per share of ₹150, the P/B ratio would be 1.33.
+
+20. Free Cash Flow (FCF)
+Definition: Free Cash Flow represents the cash generated by a company's operations after deducting capital expenditures.
+
+Formula: FCF = Cash Flow from Operations - Capital Expenditures
+
+Use: Free Cash Flow helps assess a company's ability to generate cash for potential investments, debt repayments, and dividends. It indicates financial flexibility. For example, if a company has a cash flow from operations of ₹10,00,000 and capital expenditures of ₹5,00,000, the free cash flow would be ₹5,00,000.
+
+21. Operating Revenue Ratio
+Definition: Operating Revenue Ratio measures a company's ability to generate revenue from its core operations.
+
+Formula: Operating Revenue Ratio = Operating Revenue / Total Revenue
+
+Use: This ratio helps assess the proportion of revenue generated from the core business activities. A higher ratio indicates a greater reliance on core operations. For example, if a company has operating revenue of ₹8,00,000 and total revenue of ₹10,00,000, the operating revenue ratio would be 0.8 or 80%.
+
+22. Operating Expenses Ratio
+Definition: Operating Expenses Ratio measures the proportion of revenue consumed by operating expenses.
+
+Formula: Operating Expenses Ratio = Operating Expenses / Operating Revenue
+
+Use: This ratio helps assess the efficiency of cost management. A lower ratio indicates better cost control. For example, if a company has operating expenses of ₹2,00,000 and operating revenue of ₹8,00,000, the operating expenses ratio would be 0.25 or 25%.
+
+23. EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization)
+Definition: EBITDA represents a company's operating performance by measuring its earnings before non-operating expenses.
+
+Formula: EBITDA = Net Income + Interest + Taxes + Depreciation + Amortization
+
+Use: EBITDA helps assess a company's profitability and cash flow from its core operations. It provides a more comprehensive view of a company's financial performance. For example, if a company has a net income of ₹5,00,000, interest expense of ₹50,000, taxes of ₹1,00,000, depreciation of ₹2,00,000, and amortization of ₹1,00,000, the EBITDA would be ₹9,50,000.
+
+24. COGS (Cost of Goods Sold) Ratio
+Definition: COGS Ratio measures the proportion of revenue consumed by the cost of goods sold.
+
+Formula: COGS Ratio = Cost of Goods Sold / Revenue
+
+Use: This ratio helps assess the efficiency of cost management in relation to revenue generation. A lower ratio indicates better cost control. For example, if a company has a cost of goods sold of ₹4,00,000 and revenue of ₹10,00,000, the COGS ratio would be 0.4 or 40%.
+
+25. Interest Coverage Ratio
+Definition: Interest Coverage Ratio measures a company's ability to meet its interest payments on outstanding debt.
+
+Formula: Interest Coverage Ratio = EBIT / Interest Expense
+
+Use: This ratio assesses a company's financial risk and its capacity to service its interest obligations. A higher ratio indicates a greater ability to cover interest payments. For example, if a company has an EBIT (Earnings Before Interest and Taxes) of ₹10,00,000 and an interest expense of ₹2,00,000, the interest coverage ratio would be 5.
+
+26. Price-to-Sales (P/S) Ratio
+Definition: Price-to-Sales Ratio compares a company's stock price to its revenue per share.
+
+Formula: P/S Ratio = Stock Price / Revenue per Share
+
+Use: This ratio helps investors assess the relative value of a company's stock based on its revenue generation. A higher ratio suggests higher market expectations for future sales growth. For example, if a company's stock price is ₹200 per share and its revenue per share is ₹20, the P/S ratio would be 10.
+
+27. Return on Capital Employed (ROCE)
+Definition: ROCE measures the profitability and efficiency of a company's capital investments.
+
+Formula: ROCE = (Net Operating Profit / Capital Employed) x 100
+
+Use: This ratio helps assess the company's ability to generate profits from its capital investments. For example, if a company's net operating profit is ₹5,00,000 and its capital employed is ₹20,00,000, the ROCE would be 25%.
+
+28. Debt to Asset Ratio
+Definition: Debt to Asset Ratio measures the proportion of a company's total debt in relation to its total assets.
+
+Formula: Debt to Asset Ratio = Total Debt / Total Assets
+
+Use: This ratio indicates the extent to which a company's assets are financed by debt. For example, if a company has a total debt of ₹4,00,000 and total assets of ₹10,00,000, the debt to asset ratio would be 0.4 or 40%.
+
+29. Equity Multiplier
+Definition: Equity Multiplier measures the proportion of a company's total assets funded by shareholders' equity.
+
+Formula: Equity Multiplier = Total Assets / Shareholders' Equity
+
+Use: This ratio indicates the financial leverage of a company. A higher ratio suggests a higher reliance on debt financing. For example, if a company has total assets of ₹12,00,000 and shareholders' equity of ₹4,00,000, the equity multiplier would be 3.
+
+30. Fixed Assets Turnover
+Definition: Fixed Assets Turnover measures a company's ability to generate revenue from its investment in fixed assets.
+
+Formula: Fixed Assets Turnover = Net Sales / Average Fixed Assets
+
+Use: This ratio helps assess the efficiency of a company's utilization of fixed assets. For example, if a company has net sales of ₹50,00,000 and average fixed assets of ₹10,00,000, the fixed assets turnover would be 5.
+
+31. Working Capital Turnover
+Definition: Working Capital Turnover measures a company's ability to generate revenue from its working capital.
+
+Formula: Working Capital Turnover = Net Sales / Average Working Capital
+
+Use: This ratio helps assess the efficiency of a company's utilization of working capital. For example, if a company has net sales of ₹60,00,000 and average working capital of ₹20,00,000, the working capital turnover would be 3.
+
+32. Inventory Turnover Ratio
+Definition: Inventory Turnover Ratio measures the efficiency of inventory management by assessing how many times a company sells and replaces its inventory during a given period.
+
+Formula: Inventory Turnover Ratio = Cost of Goods Sold / Average Inventory
+
+Use: This ratio helps evaluate how effectively a company manages its inventory. For example, if a company has cost of goods sold of ₹8,00,000 and average inventory of ₹2,00,000, the inventory turnover ratio would be 4.
+
+33. Operating Cash Flow Ratio
+Definition: Operating Cash Flow Ratio measures a company's ability to generate cash from its core operations.
+
+Formula: Operating Cash Flow Ratio = Operating Cash Flow / Current Liabilities
+
+Use: This ratio helps assess the company's ability to cover its short-term liabilities with its operating cash flow. For example, if a company has an operating cash flow of ₹5,00,000 and current liabilities of ₹3,00,000, the operating cash flow ratio would be 1.67.
+
+34. Cash Flow to Debt Ratio
+Definition: Cash Flow to Debt Ratio measures the company's ability to generate sufficient cash flow to cover its debt obligations.
+
+Formula: Cash Flow to Debt Ratio = Operating Cash Flow / Total Debt
+
+Use: This ratio helps assess the company's cash flow adequacy to service its debt. For example, if a company has an operating cash flow of ₹6,00,000 and total debt of ₹10,00,000, the cash flow to debt ratio would be 0.6.
+
+35. Cash Flow Margin
+Definition: Cash Flow Margin measures the proportion of each sales dollar that is converted into cash flow.
+
+Formula: Cash Flow Margin = Operating Cash Flow / Net Sales
+
+Use: This ratio helps assess the company's ability to generate cash flow from its sales revenue. For example, if a company has an operating cash flow of ₹7,00,000 and net sales of ₹10,00,000, the cash flow margin would be 0.7 or 70%.
+
+36. Net Profit Margin
+Definition: Net Profit Margin measures the profitability of a company's overall operations by comparing net profit to net sales.
+
+Formula: Net Profit Margin = (Net Profit / Net Sales) * 100
+
+Use: This ratio helps assess the company's overall profitability after accounting for all expenses and taxes. For example, if the net profit is ₹1,00,000 and net sales are ₹5,00,000, the net profit margin would be 20%.
+
+37. Accounts Receivable Turnover Ratio
+Definition: Accounts Receivable Turnover Ratio measures how efficiently a company collects payments from its customers.
+
+Formula: Accounts Receivable Turnover Ratio = Net Credit Sales / Average Accounts Receivable
+
+Use: This ratio helps assess the effectiveness of credit and collection policies. A higher ratio indicates faster collection of receivables. For example, if the net credit sales are ₹10,00,000 and the average accounts receivable is ₹2,00,000, the accounts receivable turnover ratio would be 5.
+
+38. LTV:CAC Ratio
+Definition: LTV:CAC (Lifetime Value to Customer Acquisition Cost) Ratio measures the relationship between the lifetime value of a customer and the cost of acquiring that customer.
+
+Formula: LTV:CAC Ratio = Lifetime Value (LTV) / Customer Acquisition Cost (CAC)
+
+Use: This ratio helps assess the return on investment in acquiring customers. A higher ratio indicates better efficiency in acquiring and retaining customers. For example, if the LTV is ₹50,000 and the CAC is ₹10,000, the LTV:CAC ratio would be 5:1.
+
+39. SaaS Quick Ratio
+Definition: SaaS Quick Ratio measures the company's ability to cover its short-term liabilities with its most liquid assets, excluding long-term commitments.
+
+Formula: SaaS Quick Ratio = (Cash + Short-term Investments + Accounts Receivable) / Current Liabilities
+
+Use: This ratio helps assess the company's short-term liquidity and ability to meet its immediate financial obligations. A ratio greater than 1 indicates a favorable liquidity position.
+
+40. Rule of 40
+Definition: Rule of 40 evaluates the growth and profitability of a company by combining its revenue growth rate and profitability margin.
+
+Formula: Rule of 40 = Revenue Growth Rate + Profitability Margin
+
+Use: This rule suggests that a company should have a combined growth rate and profitability margin of at least 40% to be considered a healthy and sustainable business.
+
+41. SaaS Magic Number
+Definition: SaaS Magic Number measures the efficiency of a company's sales and marketing investments in generating new revenue.
+
+Formula: SaaS Magic Number = (Revenue in Current Period - Revenue in Previous Period) / Sales and Marketing Expense in Previous Period
+
+Use: This ratio helps assess the effectiveness of sales and marketing efforts in driving revenue growth. A higher magic number indicates better efficiency.
+
+42. Net Revenue Retention
+Definition: Net Revenue Retention measures the growth rate of existing customer revenue after accounting for churn, upgrades, and cross-selling.
+
+Formula: Net Revenue Retention = (Revenue at End of Period - Revenue from Lost Customers) / Revenue at Start of Period
+
+Use: This ratio helps assess the company's ability to retain and expand revenue from existing customers. A ratio greater than 1 indicates positive revenue growth from existing customers.
+
+
+     </ol>
+ </section>
+
+ <section id="ivc">
+  
+<h2>Intrinsic Value Calculation</h2>
+<h4>Definition</h4>
+<p>Intrinsic value represents the present value of the expected future cash flows generated by a company, adjusted for the time value of money and the perceived risk associated with the investment.</p>
+
+<h4>Formula (DCF method)</h4>
+<p>
+<i>Intrinsic Value = (CF1 / (1+r)^1) + (CF2 / (1+r)^2) + ... + (CFn / (1+r)^n)</i>
+</p>
+<p>
+Where:
+
+CF1, CF2, ..., CFn = Expected future cash flows for each period (usually years)
+r = Discount rate, representing the desired rate of return or the minimum acceptable return for the investment
+</p>
+<p>Example
+Let's assume a company is expected to generate the following annual cash flows over the next five years: ₹10,000, ₹15,000, ₹20,000, ₹25,000, and ₹30,000. The discount rate is determined to be 10%.
+</p>
+
+    <p><i>Intrinsic Value = (₹10,000 / (1+0.10)^1) + (₹15,000 / (1+0.10)^2) + (₹20,000 / (1+0.10)^3) + (₹25,000 / (1+0.10)^4) + (₹30,000 / (1+0.10)^5)</i>
+
+    </p><p><i>
+    Intrinsic Value = ₹9,090.91 + ₹12,396.69 + ₹16,530.00 + ₹20,752.89 + ₹24,835.86
+    </i></p>
+    <p><i>
+    Intrinsic Value = ₹83,606.45
+    </i></p>
+<p>Based on the DCF analysis, the intrinsic value of the company's stock is estimated to be ₹83,606.45. If the current market price of the stock is significantly lower than the calculated intrinsic value, it may indicate that the stock is undervalued and potentially a good investment opportunity.</p>
+
+ </section>
+ <section id="wfs">
+  <h2>Financial Statements</h2>
+    <p><strong>Definition:</strong> Financial statements are formal records that present the financial activities and performance of a company. They provide an overview of a company's financial position, results of operations, and cash flows.</p>
+
+    <h3>Types of Financial Statements</h3>
+    <ul>
+        <li>
+            <h4>Income Statement</h4>
+            <p>
+                Also known as the profit and loss statement.
+                Shows the company's revenues, expenses, and net income or loss over a specific period.
+                Helps assess the company's profitability.
+            </p>
+        </li>
+        <li>
+            <h4>Balance Sheet</h4>
+            <p>
+                Provides a snapshot of the company's financial position at a specific point in time.
+                Presents the company's assets, liabilities, and shareholders' equity, helping evaluate its solvency and financial strength.
+            </p>
+        </li>
+        <li>
+            <h4>Cash Flow Statement</h4>
+            <p>
+                Shows the inflows and outflows of cash and cash equivalents during a specific period.
+                Helps assess the company's liquidity and cash management.
+            </p>
+        </li>
+        <li>
+            <h4>Statement of Changes in Equity</h4>
+            <p>
+                Tracks the changes in shareholders' equity over a specific period.
+                Includes details of share capital, retained earnings, and other equity components.
+            </p>
+        </li>
+    </ul>
+
+    <h3>Uses of Financial Statements</h3>
+    <ul>
+        <li><p>Assessing the financial performance and profitability of a company</p></li>
+        <li><p>Evaluating the company's liquidity and cash flow position</p></li>
+        <li><p>Assessing the company's financial health and solvency</p></li>
+        <li><p>Comparing the company's financial performance with industry benchmarks</p></li>
+        <li><p>Assisting in investment decision-making and valuation</p></li>
+        <li><p>Providing information to stakeholders, such as investors, lenders, and regulatory authorities</p></li>
+    </ul>
+
+    <h3>Example Format for Identifying Financial Statements</h3>
+    <table>
+        <tr>
+            <th>Financial Statement</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td>Income Statement</td>
+            <td><strong>Revenue - Expenses = Net Income</strong></td>
+        </tr>
+        <tr>
+            <td>Balance Sheet</td>
+            <td><strong>Assets = Liabilities + Shareholders' Equity</strong></td>
+        </tr>
+        <tr>
+            <td>Cash Flow Statement</td>
+            <td><strong>Cash from Operating Activities + Cash from Investing Activities + Cash from Financing Activities = Net Increase/Decrease in Cash</strong></td>
+        </tr>
+        <tr>
+            <td>Statement of Changes in Equity</td>
+            <td><strong>Beginning Shareholders' Equity + Net Income/Loss + Additional Investments - Dividends = Ending Shareholders' Equity</strong></td>
+        </tr>
+    </table>
+ </section>   
+ <section id="pandl">
+  <h2>Explanation of Profit and Loss Statement Terms</h2>
+
+  <h3>Sales</h3>
+  <p>
+      Sales represents the total amount of revenue generated from the sale of goods or services. It includes the following:
+      <ul>
+          <li>Sales: This is the total revenue generated from the company's primary business activities.</li>
+          <li>Sales Growth : This indicates the percentage increase or decrease in sales compared to a previous period.</li>
+      </ul>
+  </p>
+
+  <h3>Expenses</h3>
+  <p>
+      Expenses represent the costs incurred by the company to generate revenue. They can be categorized into various types:
+      <ul>
+          <li>Material Cost : This represents the percentage of revenue spent on raw materials and direct production costs.</li>
+          <li>Manufacturing Cost : This indicates the percentage of revenue spent on manufacturing expenses, such as labor, overheads, and other production costs.</li>
+          <li>Employee Cost : This represents the percentage of revenue spent on employee salaries, benefits, and related costs.</li>
+          <li>Other Cost : This category includes any other operating costs not classified in the above categories, such as marketing expenses, rent, utilities, and administrative costs.</li>
+      </ul>
+  </p>
+//
+ </section>   
+ <section id="bal_sheet">
+  
+  <h2>Balance Sheet Terms and Their Importance for Investors</h2>
+
+  <h3>Share Capital</h3>
+  <p>Share capital represents the amount of capital raised by a company through the issuance of shares to shareholders. It reflects the ownership interest of shareholders in the company.</p>
+
+  <h3>Equity Capital</h3>
+  <p>Equity capital refers to the portion of a company's capital that is contributed by its shareholders. It represents the ownership stake of the shareholders in the company and is calculated as the difference between total assets and total liabilities.</p>
+
+  <h3>Reserves</h3>
+  <p>Reserves include retained earnings and other accumulated profits or reserves that have not been distributed as dividends. They represent the portion of earnings that the company has retained and reinvested in the business over time.</p>
+
+  <h3>Borrowings</h3>
+  <p>Borrowings refer to the funds borrowed by the company from external sources, such as banks or financial institutions, to finance its operations or investments.</p>
+
+  <ul>
+      <li>Long-term Borrowings: These are borrowings with a maturity period exceeding one year. They include long-term loans, bonds, or debentures.</li>
+      <li>Short-term Borrowings: These are borrowings with a maturity period of less than one year. They typically include bank overdrafts, short-term loans, or commercial paper.</li>
+      <li>Lease Liabilities: These represent obligations arising from lease agreements, such as operating leases or finance leases.</li>
+      <li>Other Borrowings: Any other borrowings that do not fall under the above categories.</li>
+  </ul>
+
+  <h3>Other Liabilities and Equity</h3>
+
+  <p>Non-controlling Interest: It represents the portion of equity held by shareholders who do not have control over the company's operations.</p>
+  <p>Trade Payables: These are amounts owed to suppliers for goods or services received but not yet paid.</p>
+  <p>Advance from Customers: These are funds received from customers in advance for products or services yet to be delivered.</p>
+  <p>Other Liability Items: Any other liabilities that are not specifically mentioned above.</p>
+  <p><strong>Total Liabilities:</strong> Represents the sum of all the company's obligations or debts to external parties. It reflects the company's financial obligations and sources of financing.</p>
+
+  <h3>Assets</h3>
+
+  <p><strong>Fixed Assets:</strong> Fixed assets are long-term tangible assets that are used in the company's operations to generate revenue over an extended period.</p>
+  <ul>
+  <li><p><b>Land: </b> value of land owned by the company.</p></li>
+  <li><p><b>Building:</b> The value of buildings or structures owned by the company.</p></li>
+  <li><p><b>Plant Machinery:</b> The value of machinery or equipment used in manufacturing or production processes.</p></li>
+  <li><p><b>Equipments:</b> The value of other equipment or tools used in the company's operations.</p></li>
+  <li><p><b>Computers:</b> The value of computers or IT equipment owned by the company.</p></li>
+  <li><p><b>Furniture and Fittings:</b> The value of furniture and fixtures used in the company's offices or facilities.</p></li>
+  <li><p><b>Vehicles: </b> value of vehicles owned by the company for transportation purposes.</p></li>
+  </ul>
+  <p><strong>Intangible Assets:</strong> Intangible assets are non-physical assets that lack a physical substance but hold value for the company.</p>
+
+  <p><strong>Other Fixed Assets:</strong> Any other fixed assets that do not fall under the specific categories mentioned above.</p>
+  <p><strong>Gross Block:</strong> Gross block refers to the total original cost of acquiring fixed assets before accounting for depreciation.</p>
+  <p><strong>Accumulated Depreciation:</strong> Accumulated depreciation represents the total depreciation charged against fixed assets over their useful life. It is deducted from the gross block to determine the net value of fixed assets.</p>
+  <p><strong>CWIP (Capital Work in Progress):</strong> CWIP represents the value of ongoing projects or investments that are in progress but not yet completed.</p>
+  <p><strong>Investments:</strong> Investments include long-term investments made by the company in shares, bonds, or other financial instruments of other companies.</p>
+  <p><strong>Other Assets:</strong> Other assets encompass various assets that do not fall under specific categories mentioned above.</p>
+  <ul>
+  <li><p><b>Inventories:</b> The value of goods held by the company for sale or production.</p></li>
+  <li><p><b>Trade Receivables:</b> Amounts owed to the company by customers for goods or services sold on credit.</p></li>
+  <li><p><b>Cash Equivalents:</b> Short-term, highly liquid investments that can be easily converted to cash.</p></li>
+  <li><p><b>Loans and Advances:</b> Amounts lent by the company to external parties.</p></li>
+  <li><p><b>Other Asset Items:</b> Any other assets that are not specifically mentioned above.</p></li>
+  </ul>
+  <p><strong>Total Assets:</strong> Represents the sum of all the company's assets, both tangible and intangible. It reflects the company's resources and potential for generating future cash flows.</p>
+
+ </section>   
+ <section id="cash_flow"></section>   
+ <section id="scet"></section>   
+ <section id="pfm"></section>   
+ <section id="ib"></section>   
+ <section id="ia"></section>   
+ <section id="rm"></section>   
+ <section id="is"></section>   
+ <section id="mr"></section>   
+ <section id="itools"></section>   
+ <section id="rvsr"></section>   
+ <section id="ipsy"></section>   
+ <section id="ipro"></section>   
+ <section id="ttocons"></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <!-- <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>   
+ <section id=""></section>    -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../bootstrap-5.3.2/js/bootstrap.min.js" ></script>
+
+</html>

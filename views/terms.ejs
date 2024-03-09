@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Terms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 10%;
+            display: flex;
+            border-radius: 2vh;
+            flex-direction: row;
+            width: 140vh;
+            height: 50vh;
+            flex-wrap: wrap;
+            border: 5px solid black;
+            padding: 5vh;
+        }
+
+        .item{
+            border: 1px solid greenyellow;
+            background-color: black;
+            flex-grow: 1;
+            padding: 10px;
+            border-radius: 8px;
+            flex-basis: 10%;
+            text-align: justify;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .item h4{
+            color: azure;
+        }
+        
+        .item:hover {
+            color: black;
+            background-color: azure;
+        }
+        .item:hover h4{
+            color: black;
+            background-color: azure;
+        }
+        h3{
+            text-decoration: underline;
+            margin-top: 100vh;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+
+        p{
+            font-size: 1.3rem;
+            padding: 5px;
+            margin: 2%;
+            line-break: 2rem;
+            word-spacing: 5px;
+            text-align: justify;
+            padding-bottom: 20px;
+            border-bottom:2px double grey ;
+            
+        }
+        b{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        p b{
+            font-size: 1.5rem;
+            
+        }
+
+
+        @media (max-width:770px) {
+            *{
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+            .container{
+                margin:5%;
+                border-radius: 1vh;
+                border: 3px solid black;
+                flex-direction:row;
+                width: 80%;
+                height:70%;
+                flex-wrap: wrap;
+                overflow-x: hidden;
+            }
+            .item{
+                padding: 10px;
+                text-align: justify;
+                border-radius: 8px;
+                flex-basis: 30%;
+                background-color:black;
+            }
+        }
+
+        @media (max-width:550px) {
+            .container{
+                margin: 3%;
+                width: 70%;
+                height: 70%;
+            }
+        }
+        
+        @media (max-width:360px) {
+            .item{
+                flex-basis: 50%;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="item" href="#budget"><div ><h4>Budgeting</h4></div></a>
+        <a class="item" href="#saving"><div ><h4>Saving and Investing</h4></div></a>
+        <a class="item" href="#ci"><div ><h4>Compound Interest</h4></div></a>
+        <a class="item" href="#randr"><div ><h4>Risk and Return</h4></div></a>
+        <a class="item" href="#debtman"><div ><h4>Debt Management</h4></div></a>
+        <a class="item" href="#insu"><div ><h4>Insurance</h4></div></a>
+        <a class="item" href="#retire"><div ><h4>Retirement Planning</h4></div></a>
+        <a class="item" href="#tax"><div ><h4>Taxation</h4></div></a>
+        <a class="item" href="#diver"><div ><h4>Diversification</h4></div></a>
+        <a class="item" href="#fingoal"><div ><h4>Financial Goals</h4></div></a>
+        <a class="item" href="#assetallo"><div ><h4>Asset Allocation</h4></div></a>
+        <a class="item" href="#netw"><div ><h4>Net Worth</h4></div></a>
+        <a class="item" href="#divi"><div ><h4>Dividend</h4></div></a>
+        <a class="item" href="#cagr"><div ><h4>CAGR</h4></div></a>
+        <a class="item" href="#liqui"><div ><h4>Liquidity</h4></div></a>
+        <a class="item" href="#infi"><div ><h4>Inflation</h4></div></a>
+        <a class="item" href="#cscore"><div ><h4>Credit Score</h4></div></a>
+        <a class="item" href="#roi"><div ><h4>ROI </h4></div></a>
+        <a class="item" href="#cgain"><div ><h4>Capital Gains</h4></div></a>
+        <a class="item" href="#eratio"><div ><h4>Expense Ratio</h4></div></a>
+        <a class="item" href="#sm"><div ><h4>Stock Market</h4></div></a>
+        <a class="item" href="#risktol"><div ><h4>Risk Tolerance</h4></div></a>
+        <a class="item" href="#ass"><div ><h4>Assets</h4></div></a>
+        <a class="item" href="#lia"><div ><h4>Liabilities</h4></div></a>
+        <a class="item" href="#netinc"><div ><h4>Net Income</h4></div></a>
+        <a class="item" href="#amor"><div ><h4>Amortization</h4></div></a>
+        <a class="item" href="#mcap"><div ><h4>Market Capitalization</h4></div></a>
+        <a class="item" href="#eq"><div ><h4>Equity</h4></div></a>
+        <a class="item" href="#dp"><div ><h4>Depreciation</h4></div></a>
+        <a class="item" href="#exp"><div ><h4>Expense</h4></div></a>
+        <a class="item" href="#stockdivi"><div ><h4>Stock Dividend</h4></div></a>
+        <a class="item" href="#marketord"><div ><h4>Market Order</h4></div></a>
+        <a class="item" href=""><div ><h4></h4></div></a>
+        <a class="item" href=""><div ><h4></h4></div></a>
+    </div>
+
+    <div>
+        
+<h3>Finance Related Terms and Definitions</h3>
+
+<p><b id="budget">Budgeting:</b> Creating a budget involves analyzing your income and expenses to allocate your money wisely. For example, if your monthly income is ₹3,000 and your expenses include rent (₹1,000), groceries (₹300), utilities (₹150), transportation (₹200), and entertainment (₹200), you can create a budget to ensure you're spending within your means.
+</p>
+<p><b id="saving">Saving and Investing:</b> Saving refers to setting aside money for future needs or emergencies. For instance, saving a portion of your income each month and putting it into a savings account can help build an emergency fund. Investing, on the other hand, involves using your money to purchase assets like stocks or bonds with the expectation of generating a return. For example, investing in a diversified portfolio of stocks and bonds for long-term growth.
+</p>
+<p><b id="ci">Compound Interest:</b> Compound interest is when the interest on your initial investment or deposit is added to the principal, and the new total becomes the basis for future interest calculations. For example, if you invest ₹1,000 at an annual interest rate of 5%, after the first year, you'll earn ₹50 in interest. In the second year, you'll earn interest not only on the initial ₹1,000 but also on the additional ₹50 earned in the first year.
+</p>
+<p><b id="randr">Risk and Return:</b> Investments carry varying levels of risk and potential return. For example, investing in government bonds is generally considered less risky but offers lower returns compared to investing in stocks, which have higher potential returns but also higher volatility.
+</p>
+<p><b id="debtman">Debt Management:</b> Effective debt management involves understanding different types of debt and creating a repayment plan. For example, if you have multiple credit card debts with varying interest rates, you can prioritize paying off the debt with the highest interest rate first while making minimum payments on the other debts.
+</p>
+<p><b id="insu">Insurance:</b> Insurance provides financial protection against potential risks and losses. For example, having health insurance can help cover medical expenses in case of illness or injury, reducing the financial burden on individuals.
+</p>
+<p><b id="retire">Retirement Planning:</b> Planning for retirement involves estimating the amount of money needed to sustain your desired lifestyle after you stop working. For instance, determining how much you need to save each month and investing in retirement accounts like a 401(k) or an IRA to accumulate sufficient funds for retirement.
+</p>
+<p><b id="tax">Taxation:</b> Understanding taxation helps you navigate the impact of taxes on your income and financial decisions. For example, knowing which tax deductions you're eligible for can help minimize your tax liability and maximize your after-tax income.
+</p>
+<p><b id="diver">Diversification:</b> Diversifying your investments means spreading your money across different asset classes to reduce risk. For example, instead of investing all your money in a single stock, you can diversify by investing in stocks, bonds, and real estate to mitigate the impact of any single investment performing poorly.
+</p>
+<p><b id="fingoal">Financial Goals:</b> Financial goals are specific targets you set to achieve certain milestones. For example, a financial goal could be saving ₹10,000 for a down payment on a house within two years by allocating a portion of your income towards savings each month and cutting back on discretionary expenses.
+</p>
+<p><b id="assetallo">Asset Allocation:</b> Asset allocation refers to the distribution of investments across different asset classes, such as stocks, bonds, and cash. The goal is to create a diversified portfolio that balances risk and return. For example, an investor may allocate 60% of their portfolio to stocks, 30% to bonds, and 10% to cash equivalents.
+</p>
+<p><b id="netw">Net Worth:</b> Net worth is the difference between a person's total assets and total liabilities. It provides a snapshot of an individual's financial position. For instance, if a person's assets (including cash, investments, and property) are worth ₹500,000, and their liabilities (such as mortgages, loans, and credit card debt) amount to ₹200,000, their net worth would be ₹300,000.
+</p>
+<p><b id="divi">Dividend:</b> A dividend is a portion of a company's earnings that is distributed to its shareholders. It is usually paid in cash or additional shares. For example, if a company declares a dividend of ₹0.50 per share and an investor holds 1,000 shares, they would receive a dividend payment of ₹500.
+</p>
+<p><b id="cagr">Compound Annual Growth Rate (CAGR):</b> CAGR is a measure of an investment's average annual growth rate over a specific period, accounting for compounding. It allows investors to assess the performance of an investment over time. For instance, if an investment grows from ₹10,000 to ₹15,000 over five years, the CAGR would be approximately 8.7%.
+</p>
+<p><b id="liqui">Liquidity:</b> Liquidity refers to the ease with which an asset can be converted into cash without causing a significant price change. It is an important consideration for individuals and businesses when managing their financial resources. For example, cash is considered highly liquid because it can be readily used for transactions, while real estate is less liquid because it may take time to sell and convert into cash.
+</p>
+<p><b id="infi">Inflation:</b> Inflation is the rate at which the general level of prices for goods and services is rising, eroding the purchasing power of a currency. It is typically measured by the Consumer Price Index (CPI) or other inflation indices. For instance, if the inflation rate is 2%, it means that prices, on average, are increasing by 2% annually. Inflation erodes the value of money over time, emphasizing the importance of investments that outpace inflation.
+</p>
+<p><b id="cscore">Credit Score:</b> A credit score is a numerical representation of an individual's creditworthiness, indicating their ability to repay loans and credit obligations. It is based on credit history and is used by lenders to assess the risk associated with lending money. Credit scores typically range from 300 to 850, with higher scores indicating lower credit risk. For example, a high credit score may result in better loan terms and interest rates, while a low credit score may lead to difficulty in obtaining credit.
+</p>
+<p><b id="roi">ROI (Return on Investment):</b> ROI is a measure used to evaluate the profitability or efficiency of an investment. It is expressed as a percentage and calculated by dividing the net profit or gain from an investment by the initial investment cost and multiplying by 100. For example, if an individual invests ₹10,000 in a stock and sells it for ₹12,000, the ROI would be (12,000 - 10,000) / 10,000 * 100 = 20%. This indicates a 20% return on the initial investment.
+</p>
+<p><b id="cgain">Capital Gains: </b> gains refer to the profits earned from the sale of an investment or asset, such as stocks, real estate, or artwork. It represents the difference between the purchase price (cost basis) and the selling price. For example, if you purchase a stock for ₹1,000 and sell it for ₹1,500, the capital gain would be ₹500.
+</p>
+<p><b id="eratio">Expense Ratio:</b> The expense ratio is a measure of the fees and expenses associated with managing an investment fund, such as a mutual fund or exchange-traded fund (ETF). It is expressed as a percentage of the total assets under management. For example, if an investment fund has an expense ratio of 1%, it means that the annual fees and expenses amount to 1% of the total assets invested in the fund.
+</p>
+<p><b id="sm">Stock Market:</b> The stock market is a platform where investors can buy and sell shares of publicly traded companies. It represents the overall market for stocks and is influenced by factors such as supply and demand, company performance, economic conditions, and investor sentiment. For example, well-known stock exchanges include the New York Stock Exchange (NYSE) and the Nasdaq.
+</p>
+<p><b id="risktol">Risk Tolerance:</b> Risk tolerance refers to an individual's ability and willingness to take on financial risk when making investment decisions. It is influenced by factors such as investment goals, time horizon, financial situation, and personal preferences. For example, someone with a high risk tolerance may be comfortable investing in volatile assets like stocks, while someone with a low risk tolerance may prefer more stable investments like bonds.
+</p>
+<p><b id="ass">Assets:</b> Assets are resources with economic value that an individual, company, or organization owns or controls. They can include cash, investments, real estate, vehicles, equipment, and intellectual property. For example, a person's assets may include a bank account with ₹10,000, a car worth ₹15,000, and stocks valued at ₹25,000.
+</p>
+<p><b id="lia">Liabilities:</b> Liabilities represent the debts and obligations that an individual, company, or organization owes to others. They can include loans, mortgages, credit card balances, and outstanding bills. For example, a person's liabilities may include a student loan of ₹20,000 and credit card debt totaling ₹5,000.
+</p>
+<p><b id="netinc">Net Income:</b> Net income, also known as profit or earnings, is the total amount of revenue or income that remains after deducting expenses and taxes. It is a key indicator of financial performance. For example, if a company's total revenue is ₹100,000 and its expenses, including taxes, amount to ₹70,000, the net income would be ₹30,000.
+</p>
+<p><b id="amor">Amortization:</b> Amortization is the process of gradually reducing a debt or loan through regular payments over a specified period. It involves both the repayment of the principal amount borrowed and the payment of interest. For example, a mortgage loan may be amortized over 30 years, with monthly payments that gradually reduce the outstanding balance.
+</p>
+<p><b id="mcap">Market Capitalization:</b> Market capitalization, often referred to as market cap, is the total value of a publicly traded company's outstanding shares. It is calculated by multiplying the current stock price by the total number of shares outstanding. Market cap is used to classify companies as large-cap, mid-cap, or small-cap and is an important metric for investors assessing the size and value of a company.
+</p>
+<p><b id="eq">Equity:</b> Equity represents ownership interest in a company or property. In the context of stocks, it refers to the shares held by shareholders, representing their ownership stake in the company. Equity can also refer to the difference between the market value of an asset and any outstanding liabilities or debts associated with that asset. For example, if the market value of a property is ₹500,000, and there is a mortgage of ₹300,000 on the property, the equity would be ₹200,000.
+</p>
+<p><b id="dp">Depreciation:</b> Depreciation is the gradual decrease in the value of an asset over time due to wear and tear, obsolescence, or other factors. It is commonly used for accounting purposes to allocate the cost of an asset over its useful life. For example, a company may purchase a delivery vehicle for ₹20,000 and depreciate it over five years, resulting in an annual depreciation expense of ₹4,000.
+
+<p><b id="exp">Expense: </b> expense refers to the costs incurred by an individual, company, or organization in the process of generating revenue or conducting business operations. It can include various items such as salaries, rent, utilities, supplies, and advertising expenses. For example, a company's expenses may include employee wages totaling ₹50,000, rent expenses of ₹20,000, and advertising costs of ₹10,000.
+</p>
+<p><b id="stockdivi">Stock Dividend: </b> stock dividend is a distribution of additional shares of a company's stock to existing shareholders as a form of dividend. Instead of receiving cash, shareholders receive additional shares in proportion to their existing holdings. For example, if a company declares a 10% stock dividend and an investor holds 100 shares, they would receive an additional 10 shares as the dividend.
+</p>
+<p><b id="marketord">Market Order:</b> A market order is an order to buy or sell a security at the best available price in the current market. When placing a market order, the priority is to execute the trade quickly rather than to achieve a specific price. For example, if an investor wants to buy shares of a particular stock, they can place a market order to ensure the purchase is executed immediately at the prevailing market price.
+</p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin Learn</title>
+    <link rel="icon" type="image/x-icon" href="../finance.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet" > -->
+    <style>
+        *{
+            background-color: rgb(64, 64, 64);
+            position: relative;
+        }
+        .logbtn{
+            text-align: center;
+            margin-top: 2vh;
+            background-color: gainsboro;
+        }
+        .container{
+            position: absolute;
+            height: 85vh;
+            width: 80vh;
+            padding: 8vh;
+            margin-top: 5%;
+            margin-left: 30%;
+            background-color: gainsboro;
+            border: 2px double gray;
+            border-radius: 10px;
+        }
+        .form-group{
+            padding: 1vh;
+            background-color: gainsboro;
+        }
+        .form-label b,.form-label,form{
+            color: black;
+            background-color: gainsboro;
+        }
+       .container h2{
+        color: black;
+        background-color: gainsboro;
+        text-align: center;
+       }
+       a{
+        background-color:whitesmoke;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bolder;
+        }
+
+        @media all and (max-width:2000px) {
+            .container{
+                position: absolute;
+                height: 85vh;
+                width: 80vh;
+                padding: 10vh;
+                margin-top: 10%;
+                margin-left: 25%;
+            }
+        }
+
+        
+        @media all and (max-width:1100px) {
+            .container{
+                position: absolute;
+                height: 85vh;
+                width: 70vh;
+                padding: 10vh;
+                margin: 20vh;
+            }
+        }
+
+        @media all and (max-width:700px) {
+            .container{
+                position: absolute;
+                height: 90vh;
+                width: 60vh;
+                padding: 10vh;
+                margin: 5vh;
+                
+            }
+        }
+
+        @media all and (max-width:800px) {
+            .container{
+                position: absolute;
+                height: 90vh;
+                width: 60vh;
+                padding: 10vh;
+                margin-top: 10%;
+                margin-left: 10%;
+                
+            }
+        }
+
+        @media all and (max-width:520px) {
+            .container{
+                position: absolute;
+                height: 90vh;
+                width: 50vh;
+                padding: 5vh;
+                margin-top: 6vh;
+                margin-left: 8vh;
+                
+                
+            }
+        }
+        @media all and (max-width:430px) {
+            .container{
+                position: absolute;
+                height: 90vh;
+                width: 50vh;
+                padding: 4vh;
+                margin-top: 6vh;
+                margin-left: 8vh;
+                
+            }
+        }
+
+        @media all and (max-width:370px) {
+            .container{
+                position: absolute;
+                height: 90vh;
+                width: 40vh;
+                padding: 3vh;
+                margin-top: 5vh;
+                margin-left: 6vh;
+                
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+        <% if (messages.error) { %>
+            <div class="alert alert-danger" role="alert">
+                <%= messages.error %>
+            </div>
+        <% } %>
+        </div>
+        <h2>Registeration Form</h2>
+        <form id="form_submit" action="/register" method="POST">
+            <div class="form-group">
+                <label for="username" class="form-label"><b>Username :</b></label>
+                <input type="text" class="form-control" name="username" id="un">
+            </div>
+            <div class="form-group">
+                <label for="username" class="form-label"><b>Email :</b></label>
+                <input type="email" class="form-control" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label"><b>Password :</b></label>
+                <input type="password" class="form-control" name="password" id="pwd">
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label"><b>Confirm Password :</b></label>
+                <input type="password" class="form-control" name="confirmpassword" id="confirmpwd">
+            </div>
+            <div class="logbtn">
+                <button class="btn btn-primary" type="submit">Register</button>&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary" type="reset">Clear</button>
+            </div>
+            <div class="form-group">
+                <label for="logbut" class="form-label"><b>Having Account...</b></label>
+                <a class="form-control" id="logbut" href="/login">Login Here</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        form_submit.addEventListener( "submit", function ( event ) { 
+            var un = document.getElementById("un").value;
+            var pw1 = document.getElementById('confirmpwd').value;
+            var pw2 = document.getElementById('email').value;
+            var pw2 = document.getElementById('pwd').value;
+            if(un == "" || pw1 == "" || pw2 == ""){
+                alert("Please Enter the Fields...");
+            }
+            else{
+                if(pw1 != pw2){
+                    alert("Passwords Do not Match!");
+                }else{
+                    
+                }
+            }
+        });
+    </script>
+    <!-- <script src="../bootstrap-5.3.2/js/bootstrap.min.js" ></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

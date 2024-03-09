@@ -1,0 +1,71 @@
+.navbar-brand{
+    margin-right: 10vh;
+  }
+  
+  .nav_main{
+      display: flex;
+      flex-direction: column;
+  }
+
+  #nav-title{
+      font-size: 1.25rem;
+      font-weight: bold;
+      font-family: sans-serif;
+      text-decoration: none;
+      color: black;
+  }
+
+  #sub-headings{
+      text-decoration: none;
+      font-size: 1rem;
+  }
+
+  #sub-sub-headings{
+      text-decoration: none;
+      font-size: 1rem;
+  }
+
+  a{
+      cursor: pointer;
+  }
+  .offcanvas{
+    background-color:snow;
+  }
+
+.nav_main{
+overflow-y: scroll;
+}
+section{
+    margin-bottom: 30%;
+    margin-top: 10%;
+}
+
+.main_container{
+margin: 5%;
+padding: 10px;
+margin-top: 5%;
+overflow-x: hidden;
+}
+
+p{
+font-size: 1.3rem;
+text-indent: 20px;
+text-align:justify;
+}
+
+img{
+    width: 80%;
+    height: 60%;
+    text-align: center;
+}
+
+/* ::-webkit-scrollbar-track{
+    width: 2vh;
+    background-color: rgb(232, 208, 255);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(90, 90, 253);
+    border-radius: 10px;
+} */
